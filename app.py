@@ -118,6 +118,7 @@ with app.app_context():
 # Routes
 @app.route('/')
 def home():
+    return"server running"
     if 'user_id' in session:
         return redirect(url_for('dashboard'))
     return render_template('login.html')
