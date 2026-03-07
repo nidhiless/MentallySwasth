@@ -13,6 +13,7 @@ load_dotenv()
 from collections import defaultdict
 
 app = Flask(__name__)
+socketio = SocketIO(app)
 
 # Configuration
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
