@@ -13,7 +13,7 @@ load_dotenv()
 from collections import defaultdict
 
 app = Flask(__name__)
-socketio = SocketIO(app,async_mode='eventlet')
+socketio = SocketIO(app)
 
 # Configuration
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
@@ -28,11 +28,10 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USE_SSL'] = False
 app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
 app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
 app.config['MAIL_DEFAULT_SENDER'] = os.getenv('MAIL_DEFAULT_SENDER')
-print("MAIL USER:", os.getenv("MAIL_USERNAME"))
-print("MAIL PASS:", os.getenv("MAIL_PASSWORD"))
 # Initialize extensions
 db = SQLAlchemy(app)
 socketio = SocketIO(app, cors_allowed_origins="*")
