@@ -1,61 +1,57 @@
-#  Mentally Swasth
+## Mentally Swasth
 
-**Mentally Swasth** is a mental wellness web platform built with **Flask** that helps users track emotions, connect with others, and reflect on their mental health journey.
+Mentally Swasth is a full-stack mental wellness platform built with Flask, designed to help users monitor emotional well-being, engage in peer interaction, and maintain reflective mental health records.
 
-The application combines **mood tracking, real-time community chat, and secure OTP authentication** in a clean, responsive interface.
+The system integrates secure authentication, real-time communication, and data-driven insights within a responsive web interface.
+## Core Features
 
----
+* Secure Authentication
+  Password-less login using email-based One-Time Password (OTP) verification.
 
-## ✨ Features
+* Mood Tracking & Journaling
+  Structured logging of emotional states with optional notes and historical access.
 
-* 🔐 **Email OTP Authentication** (secure password-less login)
-* 😊 **Mood Tracking System** with personal notes and history
-* 💬 **Real-time Community Chat** using WebSockets
-* 📊 **Mood Visualization** with interactive charts
-* 🌗 **Dark / Light Theme** with persistent preference
-* 📱 **Fully Responsive UI**
+* Real-Time Community Chat
+  WebSocket-based communication enabling live user interaction.
 
----
+* Data Visualization
+  Interactive charts for analyzing mood trends over time.
 
-## 🛠 Tech Stack
+* Theme Management
+  Persistent dark/light mode using client-side state handling.
+
+* Responsive Design
+  Optimized for both desktop and mobile environments.
+
+## Technology Stack
 
 ### Backend
 
-* **Python 3.12** — Core programming language
-* **Flask** — Lightweight web framework for building the application
-* **Flask-SQLAlchemy** — ORM for database modeling and queries
-* **Flask-SocketIO** — Enables real-time communication for community chat
-* **Flask-Mail** — Handles OTP email delivery for authentication
+* Python 3.12
+* Flask
+* Flask-SQLAlchemy
+* Flask-SocketIO
+* Flask-Mail
 
 ### Database
 
-* **SQLite** — Lightweight relational database used for storing users, moods, chat messages, and ratings
+* SQLite (relational data storage for users, moods, and messages)
 
 ### Frontend
 
-* **HTML5** — Page structure and layout
-* **CSS3** — Custom styling with modern UI design (glassmorphism + responsive layout)
-* **JavaScript (Vanilla)** — Client-side interactions and API communication
-* **Socket.IO Client** — Real-time messaging with the backend
-* **Chart.js** — Mood visualization and analytics charts
+* HTML5
+* CSS3 (custom styling with responsive design principles)
+* JavaScript (Vanilla)
+* Socket.IO Client
+* Chart.js
 
 ### UI & Design
 
-* **Font Awesome** — Icon system
-* **Google Fonts (Poppins)** — Typography
-* **CSS Variables** — Dynamic theme support (Dark / Light mode)
+* Font Awesome
+* Google Fonts (Poppins)
+* CSS Variables (theme configuration and state persistence)
 
-### Development & Tools
-
-* **Git & GitHub** — Version control and repository management
-* **VS Code** — Development environment
-* **Virtual Environment (venv)** — Dependency isolation
-* **pip** — Python package manager
-
-
----
-
-## 🚀 Run Locally
+Run Locally
 
 Clone the repository:
 
@@ -91,7 +87,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 mentally-swasth
@@ -108,7 +104,7 @@ mentally-swasth
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Nidhi Patel**
 
